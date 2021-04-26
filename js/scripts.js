@@ -5,3 +5,20 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+(function() {
+
+	const hamb = document.getElementById('hamb');
+	const closeSidenav = document.getElementById('closeSidenav');
+
+	function openNav() {
+	  document.getElementById('mySidenav').style.width = "280px";
+	}
+
+	function closeNav() {
+	  document.getElementById('mySidenav').style.width = "0";
+	}
+
+	hamb.onclick = openNav;
+	closeSidenav.onclick = closeNav;
+
+})();
